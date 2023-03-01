@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,600&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* HEADER */
+header {
+  background: url("../recursos/img/BG.png") #49a3d6;
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  background-position: center;
+  height: 600px;
+}
+
+header .menu {
+  text-align: right;
+  margin: 40px 0;
+}
+
+header .menu a {
+  text-decoration: none;
+  color: #ffffff;
+  margin: 0 20px;
+  display: inline-block;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid transparent;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+header .menu a:hover {
+  border-bottom: 3px solid #ffffff;
+  border-top: 3px solid #ffffff;
+}
+
+.contenedor-texto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  /* (A/B) (I/D) */
+  margin: 140px 0px;
+
+}
+
+.contenedor-texto .texto {
+  border: 1px solid white;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+  padding: 20px 60px;
+}
+
+.contenedor-texto .texto h1,
+.contenedor-texto .texto h2 {
+  color: white;
+  font-weight: 300;
+}
+
+.contenedor-texto .texto h1 {
+  font-size: 3rem;
+}
+
+.contenedor-texto .texto h2 {
+  font-size: 1.8rem;
+}
+
+/* Acerca de */
+
+.acercade {
+  text-align: center;
+}
+
+.acercade .contenedor {
+  overflow: visible;
+}
+
+.acercade .foto {
+  margin-top: -60px;
+}
+
+.acercade .foto img {
+  border: 5px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+}
+
+.acercade .informacion {
+  color: #5a5a5a;
+  font-weight: 600;
+  font-size: 1rem;
+  width: 80%;
+  line-height: 1.8rem;
+  margin: 40px auto 60px auto;
+}
+
+.acercade .informacion .titulo {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #e69740;
+}
+
+.acercade .informacion .bold {
+  color: #5398ec;
+  text-decoration: underline;
+}
+
+/* Trabajos */
+.trabajos {
+  background-color: white;
+  padding: 20px 0;
+}
+
+.trabajos .titulo {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #323068;
+  text-align: center;
+}
+
+.contenedor-tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+/* estilos de la card */
+.card {
+  width: 300px;
+  background-color: white;
+  margin: 1rem;
+  box-shadow: 2px 2px 10px 1px rgba(97, 97, 97, 0.3);
+  border-radius: 10px;
+  /* padding: 0 0 10px 0; */
+  overflow: hidden;
+}
+
+.card-image {
+  height: 250px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.card-image img {
+  height: inherit;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: 0.4s linear;
+  width: 100%;
+}
+
+.card-image img:hover {
+  object-fit: cover;
+  transform: scale(1.2);
+}
+
+.card-text {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.card-text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0;
+}
+
+.card-text p {
+  line-height: 1.5rem;
+}
+
+.card-text a {
+  color: #ffb703;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.8rem;
+  width: 100px;
+  text-align: center;
+  display: inline-block;
+  transition: 0.5s all linear;
+  background-color: #023047;
+  border-radius: 10px;
+}
+
+.card-text a:hover {
+  background-color: #ffb703;
+  color: #023047;
+}
